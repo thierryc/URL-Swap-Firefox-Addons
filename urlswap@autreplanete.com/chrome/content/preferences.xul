@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<!-- Localization Information -->
+<!DOCTYPE overlay SYSTEM "chrome://urlswap/locale/urlswap.dtd">
+ 
+ 
+<overlay id="urlswap_preferences_overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ 
+  <!-- Merge with the BrowserPreferences Window -->
+  <prefwindow id="BrowserPreferences">
+      <prefpane id="urlswapPane" label="&prefpane.label;" onpaneload="populateUrlsList()" image="chrome://urlswap/content/images/urlswap32.png">
+      <preferences>
+        <preference id="urllist" name="extensions.urlswap.rules" type="string" />
+      </preferences>
+      <script type="application/x-javascript" src="chrome://urlswap/content/urlswap.js"/>
+      <script type="application/x-javascript" src="chrome://urlswap/content/preferences.js"/>
+ 
+      <groupbox id="urlsListGroupBox">
+        <caption label="&groupbox.rulesPages;" />
+        <tree id="rulesTree" flex="1" seltype="single" hidecolumnpicker="false"
+          preference-editable="true" preference="urllist"
+          onsynctopreference="return saveUrlsList();" rows="8">
+          <treecols>
+             <treecol id="url1ColLabel" label="&locationFindColumn;" flex="50" />
+             <splitter class="tree-splitter" />
+             <treecol id="url2ColLabel" label="&locationReplaceColumn;" flex="50" />
+        </treecols>
+        <treechildren id="urlsList">
+            <!-- to be populated by the javascript on pane load -->
+        </treechildren>
+      </tree>
+ 
+      <hbox pack="center">
+          <hbox pack="start" flex="40">
+            <button id="upButton" label="&up.label;" oncommand="move('up');" />
+            <button id="downButton" label="&down.label;" oncommand="move('down');" />
+          </hbox>
+          <spacer flex="10" />
+          <hbox pack="end" flex="50">
+            <button id="newButton" label="&newRule.button;" oncommand="newRule();" />
+            <button id="editButton" label="&editRule.button;" oncommand="editRule();" />
+            <button id="deleteButton" label="&deleteRule.button;" oncommand="deleteRule();" />
+          </hbox>
+        </hbox>
+      </groupbox>
+         
+ 
+      <vbox id="rulesEditorGroupBox">
+        <groupbox id="locationFindGroupBox">
+          <caption label="&locationFind.label;" />
+          <hbox>
+               <textbox class="padded" flex="1" id="locationFindField"
+               type="autocomplete" autocompletesearch="history" />
+          </hbox>
+          <hbox pack="end">
+            <button label="&useCurrentPage.label;" id="locationUseCurrent"
+                    oncommand="setToCurrentPage('locationFindField');" />
+            <button label="&useBookmark.label;" id="locationUseBookmark"   
+                    oncommand="setToBookmark('locationFindField');" />
+            <button label="&useBlankPage.label;" id="locationUseBlank"   
+                    oncommand="setToBlankPage('locationFindField');" />
+          </hbox>
+           
+          </groupbox>
+
+          <groupbox id="locationReplaceGroupBox">
+          <caption label="&locationReplace.label;" />
+          <hbox>
+            <textbox class="padded" flex="1" id="locationReplaceField"
+               type="autocomplete" autocompletesearch="history" />
+          </hbox>
+          <hbox pack="end">
+            <button label="&useCurrentPage.label;" id="locationReplaceUseCurrent"
+                    oncommand="setToCurrentPage('locationReplaceField');" />
+            <button label="&useBookmark.label;" id="locationReplaceUseBookmark"   
+                    oncommand="setToBookmark('locationReplaceField');" />
+            <button label="&useBlankPage.label;" id="locationReplaceUseBlank"   
+                    oncommand="setToBlankPage('locationReplaceField');" />
+          </hbox>
+          </groupbox>
+         
+      <!-- hidden textbox to store the index of the schedule being modified -->
+      <textbox id="editIndex" value="" hidden="true" />
+    <separator class="groove-thin"/>
+        <!-- Save and Cancel Buttons -->
+        <hbox pack="center">
+        <button id="saveButton" label="&save.label;" oncommand="saveRule();" />
+        <button id="cancelButton" label="&cancel.label;" oncommand="cancelRule();" />
+        </hbox>
+ 
+      </vbox>
+    </prefpane>
+ 
+  </prefwindow>
+ 
+</overlay>

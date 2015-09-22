@@ -1,0 +1,7 @@
+content   urlswap   chrome/content/
+
+locale    urlswap   en-US   chrome/locale/en-US/urlswap/
+locale    urlswap   fr-FR   chrome/locale/fr-FR/urlswap/
+
+overlay   chrome://browser/content/browser.xul   chrome://urlswap/content/urlswap.xul
+overlay   chrome://browser/content/preferences/preferences.xul   chrome://urlswap/content/preferences.xul

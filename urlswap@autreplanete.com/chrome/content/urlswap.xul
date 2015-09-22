@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+
+<!-- Localization Information -->
+<!DOCTYPE overlay SYSTEM "chrome://urlswap/locale/urlswap.dtd">
+
+
+<overlay id="hpsched_browser_overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <!-- Include the javascript code -->
+  <script type="application/x-javascript" src="chrome://browser/content/utilityOverlay.js" />
+  <script type="application/x-javascript" src="chrome://urlswap/content/urlswap.js" />
+  
+
+
+  <!-- Init only if this is an actual browser window (not prefs or something) -->
+  <window id="main-window">
+    <script type="application/x-javascript">
+	//window.addEventListener("load", urlswap_init, false);
+    </script>
+  </window>
+
+
+  <!-- Add the icon to the bottom right of screen -->
+  <statusbar id="status-bar">
+    <statusbarpanel class="statusbarpanel-iconic" id="urlswap_sbi"
+			  tooltiptext="&statusbar.tooltip.default;"
+			  onclick="urlswapRun()"
+              src="chrome://urlswap/content/images/urlswap18_grey.png"  style="cursor:pointer" />
+  </statusbar>
+
+
+  <!-- Create an menu item -->
+  <menupopup id="menu_ToolsPopup">
+  
+  
+  	<menu label="&menuitem.label;" insertafter="devToolsSeparator"  oncommand="" class="menuitem-iconic" image="chrome://urlswap/content/images/urlswap16.png" >
+		<menupopup id="urlswap-popup">
+    		
+		  <menuitem label="&menuitem.run;" oncommand="urlswapRun();" />
+    		
+		  <menuitem label="&menuitem.options;" oncommand="openPreferences('urlswapPane');" />
+     	 
+		</menupopup>
+    </menu>
+  </menupopup>
+
+</overlay>

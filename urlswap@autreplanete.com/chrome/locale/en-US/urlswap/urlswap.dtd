@@ -1,0 +1,35 @@
+﻿<!ENTITY  menuitem.label             "URL Swap">
+<!ENTITY  menuitem.run      		 "URL Swap Run">
+
+<!ENTITY  menuitem.options           "Preferences">
+
+<!ENTITY  statusbar.tooltip.default  "URL Swap Run">
+
+<!ENTITY  prefpane.label             "URL Swap">
+
+<!ENTITY  locations.label            "Location(s):">
+<!ENTITY  newRule.button          	 "New Rule">
+
+<!ENTITY  editRule.button         	 "Edit Rule">
+
+<!ENTITY  deleteRule.button       	 "Delete Rule">
+<!ENTITY  groupbox.editRule       	 "Rules Editor">
+<!ENTITY  locationFindColumn      	 "Location 1">
+<!ENTITY  locationReplaceColumn   	 "Location 2">
+<!ENTITY  locationFind.label      	 "Location 1">
+<!ENTITY  locationReplace.label   	 "Location 2">
+
+<!ENTITY  save.label         		 "Save">
+
+<!ENTITY  cancel.label       		 "Cancel">
+<!ENTITY  useCurrentPage.label       "Use Current Page">
+
+<!ENTITY  useBookmark.label          "Use Bookmarks...">
+
+<!ENTITY  useBlankPage.label         "Use Blank Page">
+
+<!ENTITY  up.label                   "Up">
+
+<!ENTITY  down.label                 "Down">
+
+<!ENTITY  groupbox.rulesPages    	 "Find and replace rules :">
