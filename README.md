@@ -8,7 +8,7 @@ This is an old useful project. I open today the source. 22/09/2015
 
 Be free to fork it and pull request to iprove it.
 
-About this Add-on
+### About this Add-on
 
 Swap windows URL root to another (replace root URL) like : 
 www.google.com/search?&q=Autre+planète+Design+Studio+Paris&...
@@ -27,7 +27,7 @@ Click on URL swap icons (Right Bottom Corner) to swap the current URL.
 
 FF4 compatible NOW!
 
-General usage:
+### General usage:
 
 Swap between development and live version
 
