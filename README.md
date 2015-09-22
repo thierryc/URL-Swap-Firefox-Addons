@@ -4,6 +4,10 @@ The URL Swap extension changes the root to another URL that you specify in the P
 
 https://addons.mozilla.org/en-US/firefox/addon/url-swap/?src=search
 
+This is an old useful project. I open today the source. 22/09/2015
+
+Be free to fork it and pull request to iprove it.
+
 About this Add-on
 
 Swap windows URL root to another (replace root URL) like : 
