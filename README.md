@@ -1,6 +1,4 @@
-# URL-Swap-
-
-#URL Swap Firefox Addon (Find and Replace).  
+# URL Swap Firefox Addon (Find and Replace).  
 
 The URL Swap extension changes the root to another URL that you specify in the Preferences window.
 
@@ -16,7 +14,6 @@ your localhost
 
 to: yourWebSite.com (your web pages)
 ...
-
 
 
 ###Howto :
