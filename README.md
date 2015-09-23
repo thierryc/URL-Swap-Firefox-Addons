@@ -4,9 +4,9 @@ The URL Swap extension changes the root to another URL that you specify in the P
 
 https://addons.mozilla.org/en-US/firefox/addon/url-swap/?src=search
 
-This is an old useful project. I open today the source. 22/09/2015
+This is an old Firefox Addon project (2008). I open today the source. 22/09/2015
 
-Be free to fork it and pull request to iprove it.
+Be free to fork it and pull request to improve it.
 
 ### About this Add-on
 
