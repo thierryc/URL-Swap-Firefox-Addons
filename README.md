@@ -11,12 +11,18 @@ Be free to fork it and pull request to iprove it.
 ### About this Add-on
 
 Swap windows URL root to another (replace root URL) like : 
-www.google.com/search?&q=Autre+planète+Design+Studio+Paris&...
-to: www.google.fr/search?&q=Autre+planète+Design+Studio+Paris&...
-OR
-your localhost
 
-to: yourWebSite.com (your web pages)
+www.google.com/search?&q=Autre+planète+Design+Studio+Paris&...
+to: 
+www.google.fr/search?&q=Autre+planète+Design+Studio+Paris&...
+
+###OR
+
+localhost
+to: 
+yourWebSite.com (your web pages)
+
+
 ...
 
 
