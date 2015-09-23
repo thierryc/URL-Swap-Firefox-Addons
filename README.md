@@ -13,7 +13,9 @@ Be free to fork it and pull request to iprove it.
 Swap windows URL root to another (replace root URL) like : 
 
 www.google.com/search?&q=Autre+planète+Design+Studio+Paris&...
+
 to: 
+
 www.google.fr/search?&q=Autre+planète+Design+Studio+Paris&...
 
 ###OR
